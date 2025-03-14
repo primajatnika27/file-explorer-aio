@@ -1,0 +1,6 @@
+[submodule "fe-file-explorer"]
+	path = fe-file-explorer
+	url = https://github.com/primajatnika27/fe-file-explorer
+[submodule "svc-file-explorer"]
+	path = svc-file-explorer
+	url = https://github.com/primajatnika27/svc-file-explorer
