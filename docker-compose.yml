@@ -3,8 +3,12 @@ services:
     build:
       context: ./fe-file-explorer
       dockerfile: Dockerfile
+      args:
+        - VITE_API_URL=http://${BACKEND_HOST}:${BACKEND_PORT:-3000}
     ports:
-      - "4200:80"
+      - "${FRONTEND_PORT:-4200}:80"
+    environment:
+      - VITE_API_URL=http://${BACKEND_HOST}:${BACKEND_PORT:-3000}
     depends_on:
       - backend
     networks:
@@ -15,7 +19,7 @@ services:
       context: ./svc-file-explorer
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "${BACKEND_PORT:-3000}:3000"
     environment:
       - DATABASE_URL=${DATABASE_URL}
       - NODE_ENV=${NODE_ENV}
