@@ -13,9 +13,32 @@ Before you begin, ensure you have the following installed:
 
 ```
 .
-├── fe-file-explorer/     # Frontend Vue 3 application
-├── svc-file-explorer/    # Backend Elysia js service
+├── fe-file-explorer/     # Frontend Vue 3 application (Git submodule)
+├── svc-file-explorer/    # Backend Elysia js service (Git submodule)
 └── docker-compose.yml    # Docker composition file
+```
+
+## Getting Started
+
+### Clone with Submodules
+
+To clone the repository with all submodules:
+
+```bash
+# Clone the main repository with submodules
+git clone --recursive <repository-url>
+cd file-explorer-test
+
+# If you've already cloned without submodules, run:
+git submodule update --init --recursive
+```
+
+### Update Submodules
+
+To update all submodules to their latest commits:
+
+```bash
+git submodule update --remote
 ```
 
 ## Environment Setup
