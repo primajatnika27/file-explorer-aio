@@ -1,6 +1,6 @@
 # File Explorer Project
 
-This project consists of a frontend application (Vue 3) and a backend service (ElysiaJS) for file exploration. The system uses PostgreSQL for database storage and MinIO for object storage.
+This project consists of a frontend application (Vue 3) and a backend service (Elysia js) for file exploration. The system uses PostgreSQL for database storage and MinIO for object storage.
 
 ## Prerequisites
 
@@ -13,8 +13,8 @@ Before you begin, ensure you have the following installed:
 
 ```
 .
-├── fe-file-explorer/     # Frontend Vue.js application
-├── svc-file-explorer/    # Backend Node.js service
+├── fe-file-explorer/     # Frontend Vue 3 application
+├── svc-file-explorer/    # Backend Elysia js service
 └── docker-compose.yml    # Docker composition file
 ```
 
@@ -139,7 +139,7 @@ bun run src/infrastructure/server/ElysiaServer.ts
 
 ## Additional Resources
 
-- [Vue.js Documentation](https://vuejs.org/)
-- [Node.js Documentation](https://nodejs.org/)
+- [Vue 3 Documentation](https://vuejs.org/)
+- [Bun Documentation](https://bun.sh/)
 - [MinIO Documentation](https://min.io/docs/minio/container/index.html)
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/) 
